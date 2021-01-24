@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(196, 195, 192);
+    width: 100%;
+    height: calc(100vh - 50px);
+    margin: 0%;
+    margin-top: 30px;
+}
+
+h1{
+    font-size: 50px;
+    width: auto;
+    margin: 0px;
+    color: black;
+}
+
+#calculator-container{
+    background-color: #095497;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+    border-top: solid 6px #0c69bb;
+    border-left: solid 6px #0c69bb;
+    border-right: solid 6px #06365f;
+    border-bottom: solid 6px #06365f;
+    box-shadow: 2px 2px 0px 2px #041c31;
+}
+    #calculator{
+        background-color: #095497;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: repeat(4, 60px);
+        grid-template-rows: minmax(100px, auto) repeat(5, 52px);
+        gap: 6px;
+        width: fit-content;
+        margin: auto;
+    }
+        #calculator-name{
+            color: whitesmoke;
+            font-size: 20px;
+            font-weight: 900;
+            font-style: italic;
+            margin-top: -4px;
+            text-shadow: 2px 2px 2px #06365f;
+        }
+            #full-display{
+                background-color: #b4b4af;
+                color: black;
+                grid-column: span 4;
+                width: 240px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border-top: solid 4px black;
+                border-left: solid 4px black;
+                border-right: solid 4px #686868;
+                border-bottom: solid 4px #686868;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-end;
+                padding: 5px;
+                font-size: 1em;
+                font-family: 'ZCOOL QingKe HuangYou', cursive;
+                overflow: hidden;
+            }
+                #calculation{
+                    background-color: #b4b4af;
+                    color: black;
+                    grid-column: span 4;
+                    width: 230px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: flex-end;
+                    padding: 0px 5px 0px 5px;
+                    font-size: 1em;
+                    font-family: 'ZCOOL QingKe HuangYou', cursive;
+                    overflow: hidden;
+                    height: 1em;
+                }
+                #display{
+                    background-color: #b4b4af;
+                    color: black;
+                    grid-column: span 4;
+                    width: 230px;
+                    margin-top: 2px;
+                    margin-bottom: 2px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: flex-end;
+                    padding: 5px;
+                    font-size: 3em;
+                    height: 1em;
+                    font-family: 'ZCOOL QingKe HuangYou', cursive;
+                    overflow: hidden;
+                }
+
+button{
+    outline: none;
+    border: none;
+    margin: autp;
+    border-radius: 5px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 2.5px #00000033;
+    border-left: solid 2.5px #00000033;
+    border-right: solid 4px #00000091;
+    border-bottom: solid 4px #00000091;
+    transition: ease-in .08s;
+    font-family: Trebuchet MS, sans-serif
+}
+    .selection{
+        transform: scale(0.92);
+    }
+    .number-button, .decimal-button{
+        background-color: whitesmoke;
+        color: #095497;
+    }
+
+    .clear-button, .value-button, .exponent-button, .backspace-button{
+        background-color: rgb(48, 48, 48);
+        color: whitesmoke;
+    }
+
+    .operator-button, .equals-buttons{
+        background-color: #cf2934;
+        color: whitesmoke;
+    }
+    #equals{
+        background-color: rgb(35, 145, 81);
+        color: whitesmoke;
+    }
+
+#legend{
+    width: auto;
+    margin-top: 25px;
+    background-color: lightgoldenrodyellow;
+    padding: 15px 0px;
+    box-shadow: 4px 4px 1px black;
+}
+    #keyboard-span{
+        padding-top: 2px;
+        text-align: center;
+        font-weight: 700;
+    }
+    #legend-list {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        list-style-type: none;
+        margin: 10px 0px 0px 20px;
+        padding: 0px;
+    }

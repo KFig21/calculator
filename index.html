@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+        <!-- display font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <title>Web Calculator</title>
+</head>
+<body>
+    <main>
+
+        <div id="calculator-container">
+            <h1 id="calculator-name">Web Calculator</h1>
+                <div id="calculator">
+                    <div id="full-display">
+                        <div id="calculation">
+                            
+                        </div>
+                        <div id="display">
+                            0
+                        </div>
+                    </div>
+                    <button type="button" data-key="32" class="clear-button" id="clear">C</button>
+                    <button type="button" value="v" data-key="86" class="value-button" id="val">+/-</button>
+                    <button type="button" value="e" data-key="69" class="exponent-button" id="exponent">^</button>
+                    <button type="button" value="Backspace" data-key="8" class="backspace-button" id="backspace">⌫</button>
+
+                    <button type="button" value="7" data-key="55" class="number-button" id="seven">7</button>
+                    <button type="button" value="8" data-key="56" class="number-button" id="eight">8</button>
+                    <button type="button" value="9" data-key="57" class="number-button" id="nine">9</button>
+                    <button type="button" value="d" data-key="68" class="operator-button" id="divide">/</button>
+
+                    <button type="button" value="4" data-key="52" class="number-button" id="four">4</button>
+                    <button type="button" value="5" data-key="53" class="number-button" id="five">5</button>
+                    <button type="button" value="6" data-key="54" class="number-button" id="six">6</button>
+                    <button type="button" value="x" data-key="88" class="operator-button" id="multiply">x</button>
+
+                    <button type="button" value="1" data-key="49" class="number-button" id="one">1</button>
+                    <button type="button" value="2" data-key="50" class="number-button" id="two">2</button>
+                    <button type="button" value="3" data-key="51" class="number-button" id="three">3</button>
+                    <button type="button" value="s" data-key="83" class="operator-button" id="subtract">-</button>
+
+                    <button type="button" value="." data-key="190" class="decimal-button" id="decimal">.</button>
+                    <button type="button" value="0" data-key="48" class="number-button" id="zero">0</button>
+                    <button type="button" value="=" data-key="13" class="equals-button" id="equals">=</button>
+                    <button type="button" value="a" data-key="65" class="operator-button" id="add">+</button>
+                </div>
+        </div>
+        <div id="legend">
+            <div id="keyboard-span">Keyboard functionality</div>
+            <ul id="legend-list">
+                <li>space: clear</li>
+                <li>a: add</li>
+                <li>x: multiply</li>
+                <li>e: exponent</li>
+                <li>enter: equals</li>
+                <li>s: subtract</li>
+                <li>d: divide</li>
+                <li>v: (+/-)value</li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
