@@ -127,13 +127,18 @@ button{
         color: #095497;
     }
 
-    .clear-button, .value-button, .exponent-button, .backspace-button{
-        background-color: rgb(48, 48, 48);
+    .clear-button, .backspace-button{
+        background-color: #cf2934;
+        color: whitesmoke;
+    }
+
+    .value-button, .exponent-button{
+        background-color: #606264;
         color: whitesmoke;
     }
 
     .operator-button, .equals-buttons{
-        background-color: #cf2934;
+        background-color: #303030;
         color: whitesmoke;
     }
     #equals{
